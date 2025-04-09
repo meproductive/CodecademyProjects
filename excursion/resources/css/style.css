@@ -10,23 +10,23 @@ body {
 }
 
 h1, h2 {
-    font-size: 4vmax;
+    font-size: clamp(24px, 5vw, 72px);
 }
 
 p {
-    font-size: 1.7vmax;
+    font-size: clamp(12px, calc(0.5em + 1vw), 36px);
     color: gray;
 }
 
-a {
-    font-size: 1.7vmax;
-}
-
 figure {
-    max-width: 80%;
+    max-width: clamp(300px, 50vw, 900px);
     margin: 2rem auto;
 }
 
 video {
-    width: 50vw;
+    max-width: clamp(175px, 27.5vw, 400px);
+}
+
+#phone-icon {
+    max-width: 10vw;
 }
